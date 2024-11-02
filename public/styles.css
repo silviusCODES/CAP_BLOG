@@ -1,0 +1,163 @@
+/* Base styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 2rem; /* Use rem for padding */
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Allow body to take full height */
+}
+
+main {
+    flex: 1; /* Allow main to grow and fill space */
+}
+
+/* Header styles */
+header {
+    background: #007bff; /* Brand color */
+    color: white;
+    padding: 1.5rem 2rem; /* Use rem for padding */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+nav {
+    margin-top: 0.5rem;
+    display: flex; /* Use flexbox for navigation */
+    justify-content: center; /* Center nav items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem; /* Use rem for margin */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #e6e6e6; /* Lighter color on hover */
+}
+
+/* Main content styles */
+h1 {
+    margin-bottom: 1.5rem; /* Use rem for margin */
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for contrast */
+}
+
+form {
+    margin: 2rem auto; /* Center the form */
+    max-width: 600px; /* Limit max width */
+    background: white;
+    padding: 2rem; /* Use rem for padding */
+    border-radius: 0.5rem; /* Use rem for border radius */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 1rem; /* Use rem for padding */
+    margin-bottom: 1rem; /* Use rem for margin */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem; /* Use rem for border radius */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Highlight on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+button {
+    background: #007bff; /* Primary color */
+    color: white;
+    padding: 1rem; /* Use rem for padding */
+    border: none;
+    border-radius: 0.25rem; /* Use rem for border radius */
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background transition */
+    width: 100%; /* Full width button */
+}
+
+button:hover {
+    background: #0056b3; /* Darker shade on hover */
+}
+
+/* Post list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0; /* Use rem for margin */
+}
+
+li {
+    background: white;
+    margin: 1rem 0; /* Use rem for margin */
+    padding: 1.25rem; /* Use rem for padding */
+    border-radius: 0.5rem; /* Use rem for border radius */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for post items */
+    justify-content: space-between; /* Space between title and buttons */
+    align-items: center; /* Center align items */
+    max-width: 40vw;
+    min-width: 215px;
+}
+
+li form {
+    display: inline; /* Keep forms inline */
+    margin-left: 2rem auto; /* Use rem for margin */
+}
+
+a {
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto; /* Push footer to the end */
+    text-align: center;
+    padding: 1rem; /* Use rem for padding */
+    background: #f1f1f1;
+    border-top: 1px solid #ccc; /* Light top border */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    form {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav a {
+        margin: 0.5rem 0; /* Space between nav items */
+    }
+
+    li {
+        flex-direction: column; /* Stack items vertically in list */
+        align-items: flex-start; /* Align items to the start */
+    }
+}
